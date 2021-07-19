@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
-<!--html-->
-<meta http-equiv="Content-Type" content="text/html mode; charset=utf-8">
+
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>CVK</title>
-	<meta name="author" content="Vladimir Ksenic">
-	<meta name="description" content="pagePiling.js plugin by Alvaro Trigo.">
+	<meta name="author" content="Vladimir Ksenic" />
+	<meta name="description" content="pagePiling.js plugin by Alvaro Trigo." />
 	<meta name="keywords" content="pile,piling,piling.js,stack,pages,scrolling,stacking,touch,fullpile,scroll,plugin,jquery">
 	<meta name="Resource-type" content="Document">
 
-	<link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
-	<link rel="stylesheet" type="text/css" href="examples/examples.css" />
+	<link rel="stylesheet" type="text/css" href="../jquery.pagepiling.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
 
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:300,400,700" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -22,13 +21,11 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
-	<script type="text/javascript" src="jquery.pagepiling.min.js"></script>
+	<script type="text/javascript" src="../jquery.pagepiling.min.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function() {
+		var deleteLog = false;
 
-			/*
-			 * Plugin intialization
-			 */
+		$(document).ready(function() {
 			$('#pagepiling').pagepiling({
 				menu: '#menu',
 				anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
@@ -44,14 +41,6 @@
 		});
 
 	</script>
-
-
-	<!--link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" /-->
-	<!--link rel="stylesheet" type="text/css" href="../jquery.pagepiling.css" /-->
-	<!--link rel="stylesheet" type="text/css" href="examples.css" /-->
-
-
-
 
 
 	<style>
@@ -99,9 +88,9 @@
 		#section3,
 		#section4,
 		#section5,
-		#section6,
-			background-size cover
-
+		#section6{
+			background-size: cover;
+		}
 
 		/* Defining each section background and styles
 	* --------------------------------------- */
@@ -248,104 +237,108 @@
 
 
 		<div class="section" id="section1">
-			<div class="intro">
-
-				<h1> Hello!</h1>
-				<br><br>
-				<img src="imgs/Image/john_doe.jpg" class="circle" alt="me" style="width:240px;height:240px" title="I'm V.Ksenic."><br><br>
-				<em style='align-content:15px;color:#fff;text-shadow:2px 2px 4px #000000'>Nothing in the world belongs
-					to us, only our time.</em><br><br><br>
-
-				<p style='font-weight: bold; align-content:w3-wide;font-size:20px;color:#fff;text-shadow:2px 2px 4px #000000' id="demo">
-					I
-					am a front-end developer based in Kosice, Slovakia with years of experience in developing complex
-					websites and applications.I am especially interested in new technologies, new frameworks and
-					programming languages. As a web developer, I specialize in creating websites and scalable front-end
-					architectures.I believe in teamwork and an open-source community. I'm a programmer and an IT
-					person overall.</p>
-					<button class="xsmall" type="button" onclick='document.getElementById("demo").innerHTML = "Som front-end vývojár so sídlom v Košiciach na Slovensku s viacročnými skúsenosťami s vývojom komplexných webových stránok a aplikácií. Zaujímajú ma najmä nové technológie, nové rámce a programovacie jazyky. Ako webový vývojár sa špecializujem na vytváranie webových stránok a škálovateľných front-end architektúr. Verím v tímovú prácu a komunitu s otvoreným zdrojom kódu. Som programátor a celkovo IT človek."'>Svk text <img src="imgs/Image/sk.png" height="15px" width="18px"></button>
 
 
+			<h1> Hello!</h1>
+
+			<br><br>
+			<img src="imgs/Image/john_doe.jpg" class="circle" alt="me" style="width:240px;height:240px" title="I'm V.Ksenic."><br><br>
+			<em style='align-content:15px;color:#fff;text-shadow:2px 2px 4px #000000'>Nothing in the world belongs
+				to us, only our time.</em><br><br><br>
+
+			<p style='font-weight: bold; align-content:w3-wide;font-size:20px;color:#fff;text-shadow:2px 2px 4px #000000' id="demo">
+				I
+				am a front-end developer based in Kosice, Slovakia with years of experience in developing complex
+				websites and applications.I am especially interested in new technologies, new frameworks and
+				programming languages. As a web developer, I specialize in creating websites and scalable front-end
+				architectures.I believe in teamwork and an open-source community. I'm a programmer and an IT
+				person overall.</p>
+			<button class="xsmall" type="button" onclick='document.getElementById("demo").innerHTML = "Som front-end vývojár so sídlom v Košiciach na Slovensku s viacročnými skúsenosťami s vývojom komplexných webových stránok a aplikácií. Zaujímajú ma najmä nové technológie, nové rámce a programovacie jazyky. Ako webový vývojár sa špecializujem na vytváranie webových stránok a škálovateľných front-end architektúr. Verím v tímovú prácu a komunitu s otvoreným zdrojom kódu. Som programátor a celkovo IT človek."'>Svk text <img src="imgs/Image/sk.png" height="15px" width="18px"></button>
+		</div>
+
+
+
+
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1> Skills</h1>
+		</div>
+		<hr class="w3-padding-60" style="width:auto"><br><br>
+
+		<p class="w3-wide">Bootstrap 3,4 &amp; Css &amp;Html 5 &amp; Jquery</p>
+		<div class="w3-white">
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped progress-bar-animated w3-light-blue" style="width:99%"></div>
 			</div>
 		</div>
-		<div class="section" id="section2">
-			<div class="content">
-				<h1> Skills</h1>
-				<hr class="w3-padding-60" style="width:auto"><br><br>
+		<p class="w3-wide">Javascript &amp; React &amp; Typescript</p>
+		<div class="w3-white">
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped progress-bar-animated w3-light-blue" style="width:95%"></div>
+			</div>
+		</div>
+		<p class="w3-wide">Python</p>
+		<div class="w3-white">
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped progress-bar-animated w3-light-blue " style="width:90%"></div>
+			</div>
+		</div>
 
-				<p class="w3-wide">Bootstrap 3,4 &amp; Css &amp;Html 5 &amp; Jquery</p>
-				<div class="w3-white">
-					<div class="progress">
-						<div class="progress-bar progress-bar-striped progress-bar-animated w3-light-blue" style="width:99%"></div>
-					</div>
+		<p class="w3-wide">Java</p>
+		<div class="w3-white">
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped progress-bar-animated w3-light-blue" style="width:85%"></div>
+			</div>
+			<p class="w3-wide w3-text-grey">Sass &amp; Php</p>
+			<div class="w3-white">
+				<div class="progress">
+					<div class="progress-bar progress-bar-striped progress-bar-animated w3-light-blue " style="width:75%"></div>
 				</div>
-				<p class="w3-wide">Javascript &amp; React &amp; Typescript</p>
-				<div class="w3-white">
-					<div class="progress">
-						<div class="progress-bar progress-bar-striped progress-bar-animated w3-light-blue" style="width:95%"></div>
-					</div>
-				</div>
-				<p class="w3-wide">Python</p>
-				<div class="w3-white">
-					<div class="progress">
-						<div class="progress-bar progress-bar-striped progress-bar-animated w3-light-blue " style="width:90%"></div>
-					</div>
-				</div>
-
-				<p class="w3-wide">Java</p>
-				<div class="w3-white">
-					<div class="progress">
-						<div class="progress-bar progress-bar-striped progress-bar-animated w3-light-blue" style="width:85%"></div>
-					</div>
-					<p class="w3-wide w3-text-grey">Sass &amp; Php</p>
-					<div class="w3-white">
-						<div class="progress">
-							<div class="progress-bar progress-bar-striped progress-bar-animated w3-light-blue " style="width:75%"></div>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
-		<div class="section" id="section3">
-			<div class="content">
-				<h1> My CV concept</h1><br><br>
-				<a data-fancybox href="imgs/Image/V.Kseni%C4%8D%20CV1%20.webp"><img class="rounded" src="imgs/Image/V.Kseni%C4%8D%20CV1%20.webp" width="45%" height="45%" frameborder="0" style="border:0" allowfullscreen="" scrolling="" name=""></a>
-			</div>
+	</div>
+
+	<div class="section" id="section3">
+		<div class="intro">
+			<h1> My CV concept</h1><br><br>
+			<a data-fancybox href="imgs/Image/V.Kseni%C4%8D%20CV1%20.webp"><img class="rounded" src="imgs/Image/V.Kseni%C4%8D%20CV1%20.webp" width="45%" height="45%" frameborder="0" style="border:0" allowfullscreen="" scrolling="" name=""></a>
 		</div>
+	</div>
 
 
 
 
 
 
-		<div class="section" id="section4">
-			<div class="content">
-				<h1><i class=" fa fa-eye"></i>Use the power of images </h1><br><br>
-				<p> Gallery of pics</p>
 
-				<a data-fancybox="gallery" href="imgs/Image/b0ec08912e35316eb093bf286f6c1096.jpg"><img class="rounded" src="imgs/Image/b0ec08912e35316eb093bf286f6c1096.jpg" height="150" width="15%"></a>
-				<a data-fancybox="gallery" href="imgs/Image/fcda2edf1c06749546a1b3f5069fd8dc.jpg"><img class="rounded" src="imgs/Image/fcda2edf1c06749546a1b3f5069fd8dc.jpg" height="150" width="15%"></a>
-				<a data-fancybox="gallery" href="imgs/Image/0fa0e361160d052e079735eee2f8f136.jpg"><img class="rounded" src="imgs/Image/0fa0e361160d052e079735eee2f8f136.jpg" height="150" width="15%"></a>
-				<a data-fancybox="gallery" href="imgs/Image/skusenosti%20%E2%80%93%20k%C3%B3pia.jpg"><img class="rounded" src="imgs/Image/skusenosti%20%E2%80%93%20k%C3%B3pia.jpg" height="150" width="15%"></a>
-				<a data-fancybox="gallery" href="imgs/Image/be8ad217f286a5754c09fddd71b4fd7c.jpg"><img class="rounded" src="imgs/Image/be8ad217f286a5754c09fddd71b4fd7c.jpg" height="150" width="15%"></a>
-				<a data-fancybox="gallery" href="imgs/Image/78ce04b2b0a46fe8cce6fe82edcca044.jpg"><img class="rounded" src="imgs/Image/78ce04b2b0a46fe8cce6fe82edcca044.jpg" height="150" width="15%"></a><br><br>
+	<div class="section" id="section4">
+		<div class="intro">
+			<h1><i class=" fa fa-eye"></i>Use the power of images </h1><br><br>
+			<p> Gallery of pics</p>
+
+			<a data-fancybox="gallery" href="imgs/Image/b0ec08912e35316eb093bf286f6c1096.jpg"><img class="rounded" src="imgs/Image/b0ec08912e35316eb093bf286f6c1096.jpg" height="150" width="15%"></a>
+			<a data-fancybox="gallery" href="imgs/Image/fcda2edf1c06749546a1b3f5069fd8dc.jpg"><img class="rounded" src="imgs/Image/fcda2edf1c06749546a1b3f5069fd8dc.jpg" height="150" width="15%"></a>
+			<a data-fancybox="gallery" href="imgs/Image/0fa0e361160d052e079735eee2f8f136.jpg"><img class="rounded" src="imgs/Image/0fa0e361160d052e079735eee2f8f136.jpg" height="150" width="15%"></a>
+			<a data-fancybox="gallery" href="imgs/Image/skusenosti%20%E2%80%93%20k%C3%B3pia.jpg"><img class="rounded" src="imgs/Image/skusenosti%20%E2%80%93%20k%C3%B3pia.jpg" height="150" width="15%"></a>
+			<a data-fancybox="gallery" href="imgs/Image/be8ad217f286a5754c09fddd71b4fd7c.jpg"><img class="rounded" src="imgs/Image/be8ad217f286a5754c09fddd71b4fd7c.jpg" height="150" width="15%"></a>
+			<a data-fancybox="gallery" href="imgs/Image/78ce04b2b0a46fe8cce6fe82edcca044.jpg"><img class="rounded" src="imgs/Image/78ce04b2b0a46fe8cce6fe82edcca044.jpg" height="150" width="15%"></a><br><br>
 
 
-			</div>
 		</div>
-		<!-- About Section form -->
-		<div class="section" id="section5">
-			<div class="w3-center w3-justify w3-text-black w3-padding-14">
-				<h1><i class=" fa fa-download"></i> Write me</h1>
+	</div>
+	<!-- About Section form -->
+	<div class="section" id="section5">
+		<div class="w3-center w3-justify w3-text-black w3-padding-14">
+			<h1><i class=" fa fa-download"></i> Write me</h1>
 
-				<br>
-				<div class="container" id="ff-compose"></div>
-				<script async defer src="https://formfacade.com/include/111026483964178072025/form/1FAIpQLSdaEwPNkjfxIs355DzC0fKGsF-cBevux9Ls1DgLCr_rsgJMlQ/bootstrap.js?div=ff-compose"></script>
-			</div>
+			<br>
+			<div class="container" id="ff-compose"></div>
+			<script async defer src="https://formfacade.com/include/111026483964178072025/form/1FAIpQLSdaEwPNkjfxIs355DzC0fKGsF-cBevux9Ls1DgLCr_rsgJMlQ/bootstrap.js?div=ff-compose"></script>
 		</div>
+	</div>
 
 
-		<!--p>My normal website</p>
+	<!--p>My normal website</p>
 				<p>My normal website</p>
 				<p>My normal website</p>
 				<p>My normal website</p>
@@ -358,8 +351,8 @@
 
 
 
-		<div class="section" id="section6">
-			<div class="content"></div>
+	<div class="section" id="section6">
+		<div class="intro">
 			<h1> Testimonials</h1>
 			<br><br>
 			<img class="rounded w3-float-left" src="imgs/Image/john_doe.jpg" style="width:60px" alt="J. Doe">
@@ -402,8 +395,8 @@
 
 
 
-
 		</div>
+	</div>
 	</div>
 </body>
 
